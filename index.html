@@ -62,10 +62,25 @@ button{
 <option value="other" >Other</option>
 </select>
 <a href="success.html">
-<button type="button">Register</button>
+<button type="submit">Register</button>
 </a>
 </form>
+
 </div>
+
+<form id="registerForm">
+    <!-- your inputs -->
+
+    <button type="submit">Register</button>
+</form>
+
+<script>
+document.getElementById("registerForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    window.location.href = "success.html";
+});
+</script>
 
 </body>
 </html>
